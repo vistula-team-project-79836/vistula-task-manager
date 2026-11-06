@@ -37,7 +37,7 @@ A simple task manager built with plain HTML, CSS and JavaScript. Tasks are store
 
 ## REST API usage
 
-Base URL: `https://PROJECT_ID.supabase.co/rest/v1`
+Base URL: `https://drvzsvhwasbwcjxxybvq.supabase.co/rest/v1`
 
 | Method | Endpoint | Used for |
 |---|---|---|
