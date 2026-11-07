@@ -12,8 +12,8 @@ A simple task manager built with plain HTML, CSS and JavaScript. Tasks are store
 
 | Pull request | Link |
 |---|---|
-| Incoming: partner's PR merged into this repository | PR_LINK_INCOMING |
-| Outgoing: my PR merged into my partner's repository | PR_LINK_OUTGOING |
+| Incoming: partner's PR merged into this repository | https://github.com/vistula-team-project-79836/vistula-task-manager/pull/1 |
+| Outgoing: my PR merged into my partner's repository | https://github.com/vistula-team-project-79831/vistula-task-manager/pull/1 |
 
 ## Features
 
