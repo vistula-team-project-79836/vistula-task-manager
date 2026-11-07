@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Contribution</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #f4f5f7; color: #222; margin: 0; }
+    main { max-width: 600px; margin: 40px auto; padding: 24px; background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+    button { padding: 8px 14px; border: none; border-radius: 6px; background: #2563eb; color: #fff; font: inherit; cursor: pointer; }
+    #contributor-student-id { margin: 16px 0; font-size: 1.1em; min-height: 1.4em; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Team Contribution</h1>
+
+    <button id="load-contributor">Show Contributor</button>
+
+    <p id="contributor-student-id"></p>
+
+    <a href="index.html">Back to Task Manager</a>
+  </main>
+
+  <script>
+    document.getElementById('load-contributor').addEventListener('click', async () => {
+      const output = document.getElementById('contributor-student-id');
+      try {
+        const response = await fetch('contribution.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        output.textContent = `Contributor Student ID: ${data.contributorStudentId}`;
+      } catch (error) {
+        output.textContent = `Could not load contributor: ${error.message}`;
+      }
+    });
+  </script>
+</body>
+</html>
